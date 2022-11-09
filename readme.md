@@ -11,8 +11,8 @@ Features:
    </ul>
    
       
-  - <b>Server side - main features:</b>
    <ul>
+  - <b>Server side - main features:</b>
      <li>The server handles HTTPS requests to PixaBay API</li>
    <li>The client sends a search phrase that the server then sends to PixaBay API</li>
    <li>Once the results are back the server will return the first 9 images.</li>
