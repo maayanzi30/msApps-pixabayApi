@@ -10,10 +10,10 @@ Features:
    <li>The client side was developed using React, Redux, HTML and CSS</li>
    </ul>
    
-      
-   <ul>
+     </br> 
   - <b>Server side - main features:</b>
-     <li>The server handles HTTPS requests to PixaBay API</li>
+   <ul>
+   <li>The server handles HTTPS requests to PixaBay API</li>
    <li>The client sends a search phrase that the server then sends to PixaBay API</li>
    <li>Once the results are back the server will return the first 9 images.</li>
    <li>"next"/"prev" clicks by the user will make the server return either the next 9 or previous 9 images (if applicable) - pagination</li>
@@ -27,8 +27,15 @@ Features:
  
 <b>Install Dependencies (frontend & backend)</b>
 <ul>
-<li>cd server: ```npm install```</li>
-<li>cd frontend ```npm install```</li>
+<li>cd server:
+
+`npm install`
+
+</li>
+<li>cd frontend
+
+`npm install`</li>
+
 </ul>
 </br>
 <b>Running the project:</b>
