@@ -1,7 +1,5 @@
 msApps pixabay demo is a "Home task" built with Node.js, Express.js, React & Redux.
 
-Features:
-
 <b>Client side - main features:</b>
 
    <ul>
