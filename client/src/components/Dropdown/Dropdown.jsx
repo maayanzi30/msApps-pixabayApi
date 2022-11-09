@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-import styles from "../../styles/Dropdown.module.css";
-
-const Dropdown = ({ options, onQuery }) => {
+const Dropdown = ({ options, onQuery, placeholder }) => {
   const [select, setSelect] = useState("");
 
   const changeQueryHandler = (e) => {
@@ -10,16 +8,14 @@ const Dropdown = ({ options, onQuery }) => {
     onQuery(e.target.value);
   };
   return (
-    <div className={styles.dropdownContainer}>
-      <select value={select} onChange={changeQueryHandler}>
-        <option value="" disabled defaultValue>
-          Please select a category ...
-        </option>
-        {options.map((option, index) => {
-          return <option key={index}>{option}</option>;
-        })}
-      </select>
-    </div>
+    <select value={select} onChange={changeQueryHandler}>
+      <option value="" disabled defaultValue>
+        {placeholder}
+      </option>
+      {options.map((option, index) => {
+        return <option key={index}>{option}</option>;
+      })}
+    </select>
   );
 };
 

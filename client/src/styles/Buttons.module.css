@@ -42,6 +42,23 @@ button:disabled {
   transition: 0.7s;
 }
 
+.sortByDropdown select {
+  height: 100%;
+  width: 100%;
+}
+
+.sortByDropdown {
+  width: 10vw;
+}
+.dropdownContainer {
+  width: 70%;
+}
+
+.dropdownContainer select {
+  height: 100%;
+  width: 100%;
+}
+
 @media (min-width: 280px) {
   .buttonWrapper {
     max-width: 90vw;
@@ -78,5 +95,20 @@ button:disabled {
   }
   .buttonWrapper input {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 280px) {
+  .dropdownContainer select {
+    height: 5.3vh;
+  }
+}
+@media (min-width: 500px) {
+  .dropdownContainer select {
+    height: 5.5vh;
+  }
+}
+@media (min-width: 625px) {
+  .dropdownContainer select {
+    height: 7vh;
   }
 }

@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import styles from "../../styles/Buttons.module.css";
 import Dropdown from "../Dropdown/Dropdown";
 import SearchComponent from "../SearchComponent/SearchComponent";
+import styles from "../../styles/Buttons.module.css";
 
-const Buttons = ({ onPrev, onNext, onQuery, index, length }) => {
+const Buttons = ({
+  onPrev,
+  onNext,
+  onQuery,
+  index,
+  length,
+  onSortSelected,
+}) => {
   const [toggleCategories, setToggleCategories] = useState(false);
 
   const categories = [
@@ -29,6 +36,8 @@ const Buttons = ({ onPrev, onNext, onQuery, index, length }) => {
     "music",
   ];
 
+  const sortBy = ["Downloads", "Id", "Likes"];
+
   const prevHandler = () => {
     onPrev();
   };
@@ -39,10 +48,15 @@ const Buttons = ({ onPrev, onNext, onQuery, index, length }) => {
   const handleQuery = (value) => {
     onQuery(value);
   };
+
   const changeToggleHandler = () => {
     setToggleCategories(!toggleCategories);
   };
 
+  const handleSortSelected = (value) => {
+    value = value.toLowerCase();
+    onSortSelected(value);
+  };
   return (
     <div className={styles.buttonWrapper}>
       <button
@@ -54,9 +68,22 @@ const Buttons = ({ onPrev, onNext, onQuery, index, length }) => {
       </button>
       <button onClick={changeToggleHandler}>switch</button>
       {toggleCategories && (
-        <Dropdown options={categories} onQuery={handleQuery} />
+        <div className={styles.dropdownContainer}>
+          <Dropdown
+            options={categories}
+            onQuery={handleQuery}
+            placeholder={"Please select a category ..."}
+          />
+        </div>
       )}
       {!toggleCategories && <SearchComponent onQuery={handleQuery} />}
+      <div className={styles.sortByDropdown}>
+        <Dropdown
+          options={sortBy}
+          onQuery={handleSortSelected}
+          placeholder={"Sort by"}
+        />
+      </div>
       <button
         className={styles.buttonNext}
         disabled={length === 0 || index + 9 > length}
