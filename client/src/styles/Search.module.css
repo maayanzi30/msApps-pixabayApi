@@ -1,0 +1,19 @@
+.searchBar {
+  text-align: center;
+}
+.searchInput {
+  width: 20%;
+  height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #353c43;
+}
+.info {
+  margin: 0.5rem;
+  color: red;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}

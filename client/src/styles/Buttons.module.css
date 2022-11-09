@@ -1,0 +1,82 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 0.8rem auto;
+}
+
+.buttonWrapper input {
+  width: 100%;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #353c43;
+  border: 1px solid black;
+  color: white;
+  font-size: 1rem;
+}
+
+.buttonPrev {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.buttonNext {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.7s;
+  box-shadow: 0 0 0 2px #3e444a;
+}
+
+button:disabled {
+  background-color: #989494;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+@media (min-width: 280px) {
+  .buttonWrapper {
+    max-width: 90vw;
+    height: 2rem;
+  }
+  button {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 500px) {
+  .buttonWrapper {
+    max-width: 85vw;
+  }
+  .buttonWrapper input {
+    font-size: 1.1rem;
+  }
+  button {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 625px) {
+  .buttonWrapper {
+    width: 80vw;
+    height: 7vh;
+  }
+  .buttonWrapper input {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .buttonWrapper {
+    width: 80vw;
+  }
+  .buttonWrapper input {
+    font-size: 1.3rem;
+  }
+}

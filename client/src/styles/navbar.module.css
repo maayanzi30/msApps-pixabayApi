@@ -1,0 +1,28 @@
+.nav {
+  background-color: #353c43;
+  line-height: 0rem;
+  padding: 0 1rem;
+  width: 100vw;
+}
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 70%;
+}
+.pix {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  align-self: center;
+}
+
+@media (min-width: 280px) {
+  .logo {
+    width: 50%;
+  }
+  .pix {
+    font-size: 1.2rem;
+  }
+}

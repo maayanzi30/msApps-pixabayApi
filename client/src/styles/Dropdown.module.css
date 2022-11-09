@@ -1,0 +1,23 @@
+.dropdownContainer {
+  width: 69%;
+}
+
+.dropdownContainer select {
+  width: 100%;
+}
+
+@media (min-width: 280px) {
+  .dropdownContainer select {
+    height: 5.3vh;
+  }
+}
+@media (min-width: 500px) {
+  .dropdownContainer select {
+    height: 5.5vh;
+  }
+}
+@media (min-width: 625px) {
+  .dropdownContainer select {
+    height: 7vh;
+  }
+}
