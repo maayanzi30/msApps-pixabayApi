@@ -27,7 +27,7 @@ Features:
  </br>
  <b>Usage:</b>
  
-<b>Install Dependencies (frontend & backend)</b>
+Install Dependencies (frontend & backend)
 <ul>
 <li>cd server:
 
