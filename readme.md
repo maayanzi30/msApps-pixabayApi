@@ -11,9 +11,9 @@ Features:
    <li>The client side was developed using React, Redux, HTML and CSS</li>
    </ul>
    </br>
-   
-   
-- <b>Server side - main features:</b>
+      
+<b>Server side - main features:</b>
+
    <ul>
    <li>The server handles HTTPS requests to PixaBay API</li>
    <li>The client sends a search phrase that the server then sends to PixaBay API</li>
