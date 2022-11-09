@@ -2,16 +2,18 @@ msApps pixabay demo is a "Home task" built with Node.js, Express.js, React & Red
 
 Features:
 
-- <b>Client side - main features:</b>
+<b>Client side - main features:</b>
+
    <ul>
    <li>The user is presented with a multi-functional search bar. The user may search images using free text search box or he may switch to pre-defined categories selection.</li>
    <li>After the images are retrieved the user may browse with the "next" and "prev" buttons to see more images (up to 9 on every page)</li>
    <li>The user may also choose to sort by id, number of downloads or number of likes.</li>
    <li>The client side was developed using React, Redux, HTML and CSS</li>
    </ul>
+   </br>
    
-     </br> 
-  - <b>Server side - main features:</b>
+   
+- <b>Server side - main features:</b>
    <ul>
    <li>The server handles HTTPS requests to PixaBay API</li>
    <li>The client sends a search phrase that the server then sends to PixaBay API</li>
